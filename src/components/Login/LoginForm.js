@@ -1,7 +1,15 @@
+import React from 'react';
+import { BASE_URL } from '../../config.js';
+
 export default function LoginForm() {
+    const handleGoogleLogin = () => {
+        const googleLoginUrl = `https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=${BASE_URL}/onebox`;
+        window.location.href = googleLoginUrl;
+    };
+
     return (
         <>
-            <section className="bg-black dark:bg-black flex items-center justify-center" style={{ height: '88.5vh' }}>
+            <section className="bg-black dark:bg-black flex items-center justify-center" style={{ height: '89.7vh' }}>
                 <div className="w-full max-w-md p-6 rounded-2xl shadow dark:border"
                     style={{
                         background: 'linear-gradient(138.97deg, #111214 5.16%, #121212 105.18%)',
@@ -13,7 +21,7 @@ export default function LoginForm() {
                             Create a new account
                         </h1>
                         <form className="space-y-4 md:space-y-6" action="#">
-                            <button type="button" className="flex items-center justify-center py-2.5 px-8 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" style={{
+                            <button type="button" onClick={handleGoogleLogin} className="flex items-center justify-center py-2.5 px-8 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" style={{
                                 width: '95%',
                                 background: 'linear-gradient(138.97deg, #111214 5.16%, #121212 105.18%)',
                                 border: '1px solid #707172',

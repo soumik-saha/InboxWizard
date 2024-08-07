@@ -4,7 +4,7 @@ import Login from "./components/Login/Login.js";
 function App() {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Login />} />
     </Routes>
   );
 }
