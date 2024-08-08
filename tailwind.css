@@ -1,0 +1,31 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .all-\[unset\] {
+        all: unset;
+    }
+}
+
+:root {
+    --12-regular-font-family: "Inter", Helvetica;
+    --12-regular-font-size: 12px;
+    --12-regular-font-style: normal;
+    --12-regular-font-weight: 400;
+    --12-regular-letter-spacing: 0px;
+    --12-regular-line-height: 18px;
+    --dropdown-bg-border: rgba(52, 58, 64, 1);
+    --variable-collection-grey-2: rgba(136, 134, 134, 1);
+    --variable-collection-table-BG: rgba(34, 36, 38, 1);
+    --variable-collection-table-BG-border: rgba(52, 58, 64, 1);
+    --bg-color-light: #ffffff;
+    --bg-color-dark: #000000;
+}
+
+.light {
+    background-color: var(--bg-color-light);
+}
+
+.dark {
+    background-color: var(--bg-color-dark);
+}

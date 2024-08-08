@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* body {
+    background-image: url('./ellipse-612.svg');
+    background-color: #000;
+} */
+
+:root {
+    --bg-color-light: #ffffff;
+    --bg-color-dark: #000000;
+}
+
+.light {
+    background-color: var(--bg-color-light);
+}
+
+.dark {
+    background-color: var(--bg-color-dark);
+}
