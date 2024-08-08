@@ -17,11 +17,11 @@ export default function LoginForm() {
                     }}
                 >
                     <div className="space-y-4 md:space-y-6 text-center">
-                        <h1 className="text-xl leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                        <h1 className="text-xl leading-tight tracking-tight text-white md:text-2xl">
                             Create a new account
                         </h1>
                         <form className="space-y-4 md:space-y-6" action="#">
-                            <button type="button" onClick={handleGoogleLogin} className="flex items-center justify-center py-2.5 px-8 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" style={{
+                            <button type="button" onClick={handleGoogleLogin} className="flex items-center justify-center py-2.5 px-8 mb-2 text-sm font-medium text-white focus:outline-none rounded-md border hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" style={{
                                 width: '95%',
                                 background: 'linear-gradient(138.97deg, #111214 5.16%, #121212 105.18%)',
                                 border: '1px solid #707172',
@@ -41,7 +41,7 @@ export default function LoginForm() {
                             }}>
                                 Create an Account
                             </button>
-                            <p className="text-sm font-light text-gray-500 dark:text-gray-400 pb-10">
+                            <p className="text-sm font-light text-gray-400 pb-10">
                                 Already have an account? <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign In</a>
                             </p>
                         </form>
